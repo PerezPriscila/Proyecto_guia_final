@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="../css/index_style.css" />
     <link rel="stylesheet" href="../css/ejercicio6_style.css" />
 
-    <title>Ejercicio 1</title>
+    <title>Ejercicio 6</title>
 </head>
 
 <body>
@@ -34,14 +34,29 @@
                 <a href="./ejercicio_12.html" class="boton-estilo btn btn-dark m-2">Ejercicio 12</a>
             </div>
             <div class="col-8">
-                <!-- TU CODIGO AQUI ---------------------------------------------------------------- -->
+                <div class="container">
+        <h1>Calculadora de Descuentos</h1>
+        <form id="discountForm">
+            <label for="customerName">Nombre del Cliente:</label>
+            <input type="text" id="customerName" name="customerName" required>
 
-                <!-- FINALIZA ---------------------------------------------------------------------- -->
+            <label for="purchaseValue">Valor de la Compra:</label>
+            <input type="number" id="purchaseValue" name="purchaseValue" required min="0">
+
+            <button type="submit">Calcular</button>
+        </form>
+        <div id="result">
+            <p><strong>Nombre del Cliente:</strong> <span id="displayName"></span></p>
+            <p><strong>Valor de la Compra:</strong> $<span id="displayPurchaseValue"></span></p>
+            <p><strong>Monto a Pagar:</strong> $<span id="displayFinalAmount"></span></p>
+        </div>
+    </div>
             </div>
         </div>
         <div class="footer"></div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/alertify.min.js"></script>
+    <script src="../javascript/ejercicio_6.js"></script>
 </body>
 
 </html>
